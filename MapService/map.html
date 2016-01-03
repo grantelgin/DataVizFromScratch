@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <title>DataViz From Scratch</title>
+    <link href="css/leaflet.css" rel="stylesheet" />
+    <script src="js/leaflet.js"></script>
+    <style>
+        html, body, #mapContainer{
+            height:100%
+        }
+        body{
+            padding: 0;
+            margin:0;
+        }
+
+    </style>
+</head>
+<body>
+<div id="mapContainer"></div>
+    <script>
+        var mMap = L.map('mapContainer', {
+            center: [10, 0],
+            zoom: 5
+        });
+    </script>
+</body>
+</html>
